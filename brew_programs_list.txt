@@ -224,7 +224,6 @@ obsidian
 ollama
 onyx
 pearcleaner
-playcover-community
 podman-desktop
 protonvpn
 raycast

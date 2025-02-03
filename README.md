@@ -31,6 +31,7 @@ This repository includes configurations for:
 - **Bat** – Settings for the Bat command-line tool.
 - **Ghostty** – Configuration for the Ghostty terminal.
 - **Containers** – Settings for containerized environments.
+- **Karabiner Elements** – Settings for many useful keyboard modifications like capslocks as esc and control at the same time...
 
 ## 🚀 Installation
 
@@ -53,9 +54,10 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 
 ### 3️⃣ Install Required Packages
 
-Ensure the necessary applications are installed. Example:
+Ensure the Homebrew and necessary applications are installed. Example:
 
 ```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 xargs brew install < brew_programs_list.txt
 ```
 

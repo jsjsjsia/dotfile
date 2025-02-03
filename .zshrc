@@ -116,3 +116,4 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+export LG_CONFIG_FILE=~/.config/lazygit/config.yml

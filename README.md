@@ -36,43 +36,33 @@ This repository includes configurations for:
 - **Bat** 🦇 – Settings for the Bat command-line tool.
 - **Ghostty** 👻 – Configuration for the Ghostty terminal.
 - **Containers** 🛢️ – Settings for containerized environments.
-- **Karabiner Elements** ⌨️ – Settings for many useful keyboard modifications like capslocks as esc and control at the same time...
+- **Karabiner Elements** ⌨️ – Settings for many useful keyboard modifications like capslock as esc and control at the same time...
 
 ## 🚀 Installation
 
-Follow these steps to install and set up the dotfiles on your system.
-
-### 1️⃣ Clone the Repository
+Install everything with a single command:
 
 ```bash
-git clone https://github.com/jsjsjsia/dotfile.git ~/.dotfiles
-cd ~/.dotfiles
+git clone https://github.com/jsjsjsia/dotfiles.git ~/.dotfiles && \
+rsync -av --progress --delete ~/.dotfiles/ ~/.config/ && \
+ln -s ~/.dotfiles/.zshrc ~/.zshrc && \
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && \
+eval "$(/opt/homebrew/bin/brew shellenv)" && \
+xargs brew install < ~/.dotfiles/brew_programs_list.txt && \
+source ~/.zshrc && \
+rm -rf ~/.dotfiles
 ```
 
-### 2️⃣ Create Symbolic Links
+### Breakdown of the Command
 
-You need to create symbolic links for .zshrc configuration file:
-
-```bash
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-```
-
-### 3️⃣ Install Required Packages
-
-Ensure the Homebrew and necessary applications are installed. Example:
-
-```bash
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-xargs brew install < brew_programs_list.txt
-```
-
-### 4️⃣ Apply Configurations
-
-After linking the files and installing the required programs, restart your terminal or source the configuration:
-
-```bash
-source ~/.zshrc
-```
+1. Clone the dotfiles repository.
+2. Sync the configuration files to `~/.config/`.
+3. Create a symbolic link for `.zshrc`.
+4. Install Homebrew (if not installed).
+5. Set up Homebrew environment.
+6. Install all necessary packages from `brew_programs_list.txt`.
+7. Source `.zshrc` to apply settings.
+8. Remove the `~/.dotfiles` folder after setup.
 
 ## 🎨 Customization
 

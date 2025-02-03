@@ -1,5 +1,9 @@
 # Dotfiles
 
+![Build Status](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Homebrew](https://img.shields.io/badge/Homebrew-installed-brightgreen)
+
 Welcome to my personal dotfiles repository! This repository contains my configuration files (dotfiles) to set up and customize my development environment.
 
 ## Features

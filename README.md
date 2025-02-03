@@ -12,6 +12,7 @@ Welcome to my personal dotfiles repository! This repository contains my configur
 
 This repository includes configurations for:
 
+- **Aerospace** – My favourite i3-like tiling window manager for macOS.
 - **Zsh** – Custom `.zshrc` file for the Zsh shell.
 - **Neovim** – Configuration files for the Neovim editor.
 - **Tmux** – Settings for the Tmux terminal multiplexer.

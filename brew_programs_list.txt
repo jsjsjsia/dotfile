@@ -235,5 +235,4 @@ upscayl
 visual-studio-code
 zalo
 zed
-zen-browser
 zulu

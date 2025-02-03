@@ -12,8 +12,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH=$PATH:/Users/joseanmartinez/.spicetify
-
 export PATH="$HOME/.rbenv/shims:$PATH"
 
 # ---- FZF -----
@@ -90,7 +88,6 @@ eval "$(starship init zsh)"
 export STARSHIP_CONFIG=~/.config/starship/starship.toml
 alias cd="z"
 
-export PATH=$PATH:/Users/phuclee/.spicetify
 export PATH="/opt/homebrew/bin:$PATH"
 
 
